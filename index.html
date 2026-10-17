@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Азамат Асилов — резюме</title>
+  <meta name="description" content="Резюме Азамата Асилова: выпускник IT-специальности из Астаны, QA, изучаю разработку AI-агентов.">
+
+  <!-- Шрифты с Google Fonts.
+       Rubik и Montserrat — основные (с кириллицей).
+       VT323, Press Start 2P, Gochi Hand, Pixelify Sans — только для английских надписей. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800;900&family=Montserrat:wght@400;500;600;700&family=Pixelify+Sans:wght@500;700&family=VT323&family=Press+Start+2P&family=Gochi+Hand&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Иконки: описываем один раз, потом вставляем через <use> ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 8l8 6 8-6"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21.5 3.5L2.5 11l6 2.2L10.5 20l3.2-4.3 5 3.8z"/><path d="M8.5 13.2l8-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></symbol>
+    <symbol id="i-css" viewBox="0 0 24 24"><path d="M9 3c-3 0-3 2-3 4s0 3-2 5c2 2 2 3 2 5s0 4 3 4M15 3c3 0 3 2 3 4s0 3 2 5c-2 2-2 3-2 5s0 4-3 4"/></symbol>
+    <symbol id="i-git" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2.5"/><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 7.5v9M18 11.5c0 4-12 2-12 5"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-bug" viewBox="0 0 24 24"><rect x="8" y="8" width="8" height="12" rx="4"/><path d="M9 8c0-3 6-3 6 0M4 10l4 2M20 10l-4 2M4 18l4-2M20 18l-4-2M12 8v12M4 14h4M16 14h4"/></symbol>
+    <symbol id="i-py" viewBox="0 0 24 24"><path d="M12 3c-4 0-5 1.5-5 3.5V9h5v1H5.5C3.5 10 3 12 3 14s.5 4 2.5 4H8v-3c0-1.5 1.5-3 3-3h5c1.5 0 2-1 2-2V6.5C18 4.5 16 3 12 3z"/><path d="M12 21c4 0 5-1.5 5-3.5V15h-5v-1h6.5c2 0 2.5-2 2.5-4s-.5-4-2.5-4H16v3c0 1.5-1.5 3-3 3H8c-1.5 0-2 1-2 2v3.5C6 19.5 8 21 12 21z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="4"/><path d="M12 8V4M9 13v1M15 13v1M2 13v2M22 13v2"/><circle cx="12" cy="3.5" r="1"/></symbol>
+
+    <!-- Плоские пиксельные картинки (заливка, а не обводка) -->
+    <symbol id="px-heart" viewBox="0 0 9 8"><path d="M2 0h2v1h1V0h2v1h1v1h1v2H8v1H7v1H6v1H5v1H4V7H3V6H2V5H1V4H0V2h1V1h1z" fill="currentColor"/></symbol>
+    <symbol id="px-spark" viewBox="0 0 7 7"><path d="M3 0h1v2h3v1H4v1h3v1H4v2H3V5H0V4h3V3H0V2h3z" fill="currentColor"/></symbol>
+    <symbol id="px-gem" viewBox="0 0 8 6"><path d="M2 0h4v1h1v1h1v1H7v1H6v1H5v1H3V5H2V4H1V3H0V2h1V1h1z" fill="currentColor"/></symbol>
+    <symbol id="px-cursor" viewBox="0 0 12 19"><path d="M0 0h2v2h2v2h2v2h2v2h2v1H8v1h1v2h1v2H8v-2H7v-2H6v-1H5v1H4v1H3v1H2v1H0z" fill="currentColor"/></symbol>
+
+    <!-- Пиксельные картинки для объёмных 3D-значков (каждая собирается из квадратиков) -->
+    <symbol id="vx-star" viewBox="0 0 11 11">
+      <g fill="currentColor"><rect x="5" y="0" width="1" height="2"/><rect x="4" y="2" width="3" height="2"/><rect x="0" y="4" width="11" height="1"/><rect x="1" y="5" width="9" height="1"/><rect x="2" y="6" width="7" height="2"/><rect x="1" y="8" width="4" height="1"/><rect x="6" y="8" width="4" height="1"/><rect x="1" y="9" width="3" height="1"/><rect x="7" y="9" width="3" height="1"/><rect x="0" y="10" width="2" height="1"/><rect x="9" y="10" width="2" height="1"/></g>
+      <rect x="4" y="5" width="1" height="2" fill="#1B2A55"/><rect x="6" y="5" width="1" height="2" fill="#1B2A55"/>
+      <rect x="3" y="7" width="1" height="1" fill="#DD88C1"/><rect x="7" y="7" width="1" height="1" fill="#DD88C1"/>
+    </symbol>
+    <symbol id="vx-yes" viewBox="0 0 20 11">
+      <g fill="currentColor"><rect x="1" y="0" width="18" height="1"/><rect x="0" y="1" width="20" height="7"/><rect x="1" y="8" width="18" height="1"/><rect x="4" y="9" width="3" height="1"/><rect x="4" y="10" width="1" height="1"/></g>
+      <g fill="#407ADD"><rect x="3" y="2" width="1" height="2"/><rect x="5" y="2" width="1" height="2"/><rect x="4" y="4" width="1" height="3"/>
+      <rect x="7" y="2" width="3" height="1"/><rect x="7" y="3" width="1" height="1"/><rect x="7" y="4" width="2" height="1"/><rect x="7" y="5" width="1" height="1"/><rect x="7" y="6" width="3" height="1"/>
+      <rect x="11" y="2" width="3" height="1"/><rect x="11" y="3" width="1" height="1"/><rect x="11" y="4" width="3" height="1"/><rect x="13" y="5" width="1" height="1"/><rect x="11" y="6" width="3" height="1"/>
+      <rect x="16" y="2" width="1" height="3"/><rect x="16" y="6" width="1" height="1"/></g>
+    </symbol>
+    <symbol id="vx-arrow" viewBox="0 0 11 9">
+      <g fill="currentColor"><rect x="6" y="0" width="1" height="1"/><rect x="6" y="1" width="2" height="1"/><rect x="6" y="2" width="3" height="1"/><rect x="0" y="3" width="10" height="1"/><rect x="0" y="4" width="11" height="1"/><rect x="0" y="5" width="10" height="1"/><rect x="6" y="6" width="3" height="1"/><rect x="6" y="7" width="2" height="1"/><rect x="6" y="8" width="1" height="1"/></g>
+    </symbol>
+    <symbol id="vx-coin" viewBox="0 0 10 10">
+      <g fill="currentColor"><rect x="3" y="0" width="4" height="1"/><rect x="1" y="1" width="8" height="1"/><rect x="0" y="2" width="10" height="6"/><rect x="1" y="8" width="8" height="1"/><rect x="3" y="9" width="4" height="1"/></g>
+      <g fill="#407ADD"><rect x="2" y="4" width="1" height="1"/><rect x="3" y="5" width="1" height="1"/><rect x="4" y="6" width="1" height="1"/><rect x="5" y="5" width="1" height="1"/><rect x="6" y="4" width="1" height="1"/><rect x="7" y="3" width="1" height="1"/></g>
+    </symbol>
+    <symbol id="vx-bug" viewBox="0 0 11 8">
+      <g fill="currentColor"><rect x="3" y="0" width="1" height="1"/><rect x="7" y="0" width="1" height="1"/><rect x="4" y="1" width="3" height="1"/><rect x="3" y="2" width="5" height="1"/><rect x="1" y="3" width="9" height="1"/><rect x="3" y="4" width="5" height="1"/><rect x="1" y="5" width="9" height="1"/><rect x="3" y="6" width="5" height="1"/><rect x="1" y="7" width="1" height="1"/><rect x="4" y="7" width="3" height="1"/><rect x="9" y="7" width="1" height="1"/></g>
+      <rect x="4" y="2" width="1" height="1" fill="#F6F8EE"/><rect x="6" y="2" width="1" height="1" fill="#F6F8EE"/>
+    </symbol>
+    <symbol id="vx-cursor" viewBox="0 0 12 19"><path d="M0 0h2v2h2v2h2v2h2v2h2v1H8v1h1v2h1v2H8v-2H7v-2H6v-1H5v1H4v1H3v1H2v1H0z" fill="currentColor"/></symbol>
+  </svg>
+
+  <!-- ===== Меню: строка как у браузера и 4 вкладки =====
+       На компьютере вкладки сначала «живут» в окнах под главным экраном
+       и при прокрутке улетают сюда (это делает script.js). -->
+  <header class="nav" id="nav">
+    <div class="nav__bar" aria-hidden="true"></div>
+    <!-- Логотип: игровая приставка с картриджем «AI» (нарисована в SVG) -->
+    <a class="nav__logo" href="#top" aria-label="В начало"><svg class="logo" viewBox="-110 -28 254 144" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="logo__crate" stroke="#1B2A55" stroke-width="2.2" stroke-linejoin="round"><polygon points="97.0,16.0 138.6,40.0 105.7,59.0 64.1,35.0" fill="#C9BFA0"/><polygon points="71.9,53.5 78.8,57.5 78.8,26.5 71.9,22.5" fill="#407ADD"/><polygon points="104.8,42.5 78.8,57.5 78.8,26.5 104.8,11.5" fill="#407ADD"/><polygon points="97.9,7.5 104.8,11.5 78.8,26.5 71.9,22.5" fill="#407ADD"/><polygon points="104.8,42.5 78.8,57.5 78.8,26.5 104.8,11.5" fill="rgba(27,42,85,.28)"/><polygon points="81.0,58.8 87.9,62.8 87.9,31.8 81.0,27.8" fill="#89BC62"/><polygon points="113.9,47.8 87.9,62.8 87.9,31.8 113.9,16.8" fill="#89BC62"/><polygon points="107.0,12.8 113.9,16.8 87.9,31.8 81.0,27.8" fill="#89BC62"/><polygon points="113.9,47.8 87.9,62.8 87.9,31.8 113.9,16.8" fill="rgba(27,42,85,.28)"/><polygon points="90.1,64.0 97.0,68.0 97.0,37.0 90.1,33.0" fill="#DD88C1"/><polygon points="123.0,53.0 97.0,68.0 97.0,37.0 123.0,22.0" fill="#DD88C1"/><polygon points="116.0,18.0 123.0,22.0 97.0,37.0 90.1,33.0" fill="#DD88C1"/><polygon points="123.0,53.0 97.0,68.0 97.0,37.0 123.0,22.0" fill="rgba(27,42,85,.28)"/><polygon points="99.2,69.2 106.1,73.2 106.1,42.2 99.2,38.2" fill="#2F5FBA"/><polygon points="132.1,58.2 106.1,73.2 106.1,42.2 132.1,27.2" fill="#2F5FBA"/><polygon points="125.1,23.2 132.1,27.2 106.1,42.2 99.2,38.2" fill="#2F5FBA"/><polygon points="132.1,58.2 106.1,73.2 106.1,42.2 132.1,27.2" fill="rgba(27,42,85,.28)"/><polygon points="64.1,61.0 105.7,85.0 105.7,59.0 64.1,35.0" fill="#F6F8EE"/><polygon points="138.6,66.0 105.7,85.0 105.7,59.0 138.6,40.0" fill="#E2DCC4"/><polygon points="97.0,16.0 138.6,40.0 105.7,59.0 64.1,35.0" fill="none"/><polygon points="77.9,55.0 91.8,63.0 91.8,57.0 77.9,49.0" fill="#1B2A55"/></g><g class="logo__cables"><path d="M-33.8,36.5 Q-65.8,48.0 -67.5,53.0" fill="none" stroke="#1B2A55" stroke-width="1.8"/><path d="M-19.9,44.5 Q-3.5,64.0 -1.7,73.0" fill="none" stroke="#1B2A55" stroke-width="1.8"/></g><g class="logo__console" stroke="#1B2A55" stroke-width="2.2" stroke-linejoin="round"><polygon points="-52.0,30.0 27.7,76.0 27.7,60.0 -52.0,14.0" fill="#CFD2C3"/><polygon points="79.7,46.0 27.7,76.0 27.7,60.0 79.7,30.0" fill="#B7BBA8"/><polygon points="0.0,-16.0 79.7,30.0 27.7,60.0 -52.0,14.0" fill="#E9EBE0"/><polygon points="-39.8,15.0 26.0,53.0 26.0,47.0 -39.8,9.0" fill="#D9DBCD"/><polygon points="67.5,29.0 26.0,53.0 26.0,47.0 67.5,23.0" fill="#C3C7B4"/><polygon points="1.7,-15.0 67.5,23.0 26.0,47.0 -39.8,9.0" fill="#F3F4EC"/><polyline points="-48.5,27.0 24.2,69.0" fill="none" stroke="#9DA28C" stroke-width="1.2"/><polyline points="-48.5,23.0 24.2,65.0" fill="none" stroke="#9DA28C" stroke-width="1.2"/><polygon points="-17.3,6.0 -6.9,12.0 -13.9,16.0 -24.2,10.0" fill="#407ADD"/><polygon points="19.1,27.0 29.4,33.0 22.5,37.0 12.1,31.0" fill="#DD88C1"/><polygon points="-38.1,36.0 -29.4,41.0 -29.4,36.0 -38.1,31.0" fill="#1B2A55"/><polygon points="-24.2,44.0 -15.6,49.0 -15.6,44.0 -24.2,39.0" fill="#1B2A55"/><polygon points="9.5,-0.5 44.2,19.5 32.0,26.5 -2.6,6.5" fill="#1B2A55"/></g><g class="logo__cart" stroke="#1B2A55" stroke-width="2.2" stroke-linejoin="round"><polygon points="2.6,14.5 32.0,31.5 32.0,-0.5 2.6,-17.5" fill="#DD88C1"/><polygon points="39.0,27.5 32.0,31.5 32.0,-0.5 39.0,-4.5" fill="#B9579A"/><polygon points="9.5,-21.5 39.0,-4.5 32.0,-0.5 2.6,-17.5" fill="#F7C4E5"/><g transform="matrix(0.866,0.5,0,1,2.6,-17.5)"><rect x="5" y="5" width="24" height="20" rx="2" fill="#F6F8EE" stroke="#1B2A55" stroke-width="1.6"/><text x="17" y="20.5" text-anchor="middle" font-family="Rubik, sans-serif" font-weight="900" font-size="14" fill="#407ADD">AI</text></g></g><g class="logo__pads"><g class="logo__pad"><g transform="translate(0,4)"><g transform="matrix(0.866,0.5,-0.866,0.5,0.0,0.0)"><rect x="70" y="74" width="44" height="20" rx="10" fill="#9DA28C" stroke="#1B2A55" stroke-width="2.2"/></g></g><g transform="matrix(0.866,0.5,-0.866,0.5,0.0,0.0)"><rect x="70" y="74" width="44" height="20" rx="10" fill="#D7DAC9" stroke="#1B2A55" stroke-width="2.2"/><path d="M78 84h8M82 80v8" stroke="#1B2A55" stroke-width="3" stroke-linecap="round"/><circle cx="102" cy="82" r="2.6" fill="#407ADD"/><circle cx="107" cy="86" r="2.6" fill="#89BC62"/></g></g><g class="logo__pad"><g transform="translate(0,4)"><g transform="matrix(0.866,0.5,-0.866,0.5,0.0,0.0)"><rect x="-8" y="92" width="44" height="20" rx="10" fill="#9DA28C" stroke="#1B2A55" stroke-width="2.2"/></g></g><g transform="matrix(0.866,0.5,-0.866,0.5,0.0,0.0)"><rect x="-8" y="92" width="44" height="20" rx="10" fill="#D7DAC9" stroke="#1B2A55" stroke-width="2.2"/><path d="M0 102h8M4 98v8" stroke="#1B2A55" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="100" r="2.6" fill="#407ADD"/><circle cx="29" cy="104" r="2.6" fill="#89BC62"/></g></g></g></svg></a>
+    <nav class="tabs" aria-label="Разделы">
+      <a class="btab btab--sky"   data-for="about"      href="#about">Обо мне <span class="btab__x" aria-hidden="true">×</span></a>
+      <a class="btab btab--sky" data-for="experience" href="#experience">Опыт <span class="btab__x" aria-hidden="true">×</span></a>
+      <a class="btab btab--sky"  data-for="skills"     href="#skills">Навыки <span class="btab__x" aria-hidden="true">×</span></a>
+      <a class="btab btab--sky" data-for="contacts"   href="#contacts">Контакты <span class="btab__x" aria-hidden="true">×</span></a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== ПЕРВЫЙ ЭКРАН: CTRL+Z И ОКНА-ВКЛАДКИ =====================
+         На компьютере экран «закреплён»: при прокрутке окна справа
+         постепенно уменьшаются и превращаются в кнопки меню сверху (это делает script.js). -->
+    <section class="intro" id="top">
+      <div class="intro__pin">
+        <div class="wrap intro__grid">
+
+          <!-- Слева: объёмные клавиши Ctrl + Z -->
+          <div class="ctrlz">
+            <div class="ctrlz__label">
+              <span class="pill">CTRL + Z</span>
+              <span class="ctrlz__note"><i></i>in my life</span>
+            </div>
+
+            <div class="keys">
+              <button class="key key--ctrl" id="keyCtrl" type="button" aria-label="Клавиша Ctrl">ctrl</button>
+              <button class="key key--z" id="keyZ" type="button" aria-label="Клавиша Z">Z</button>
+            </div>
+            <p class="ctrlz__toast" id="toast" role="status"></p>
+
+            <p class="ctrlz__text">Ошибся? Отменил. Разобрался. Сделал лучше</p>
+            <p class="ctrlz__sub">Нажмите на клавиши или Ctrl + Z на своей клавиатуре</p>
+
+            <svg class="px px--spark ctrlz__s1 float" style="--d:-2s" aria-hidden="true"><use href="#px-spark"/></svg>
+            <span class="vox" data-vox="vx-cursor" style="--w:46px;--ar:12/19;--d:-1s;color:var(--paper);right:4%;bottom:36%"></span>
+          </div>
+
+          <!-- Справа: четыре окна. Каждое потом становится кнопкой меню -->
+          <div class="stack">
+            <div class="swin swin--sky" data-for="about">
+              <div class="swin__inner">
+                <div class="swin__bar"><i></i><i></i><i></i>
+                  <a class="btab btab--sky" href="#about">Обо мне <span class="btab__x" aria-hidden="true">×</span></a>
+                  <span class="btab btab--word" aria-hidden="true">don't <span class="btab__x">×</span></span>
+                </div>
+                <div class="swin__body">
+                  <h1 class="swin__name">Азамат Асилов</h1>
+                  <p class="swin__role">IT-специалист · Астана</p>
+                </div>
+              </div>
+              <span class="swin__label" aria-hidden="true">Обо мне <span class="btab__x">×</span></span>
+            </div>
+
+            <div class="swin swin--green" data-for="experience">
+              <div class="swin__inner">
+                <div class="swin__bar"><i></i><i></i><i></i>
+                  <a class="btab btab--sky" href="#experience">Опыт <span class="btab__x" aria-hidden="true">×</span></a>
+                  <span class="btab btab--word" aria-hidden="true">forget <span class="btab__x">×</span></span>
+                </div>
+                <div class="swin__body">
+                  <p class="swin__slogan">Из QA — в разработку AI-агентов</p>
+                </div>
+              </div>
+              <span class="swin__label" aria-hidden="true">Опыт <span class="btab__x">×</span></span>
+            </div>
+
+            <div class="swin swin--pink" data-for="skills">
+              <div class="swin__inner">
+                <div class="swin__bar"><i></i><i></i><i></i>
+                  <a class="btab btab--sky" href="#skills">Навыки <span class="btab__x" aria-hidden="true">×</span></a>
+                  <span class="btab btab--word" aria-hidden="true">to hire <span class="btab__x">×</span></span>
+                </div>
+                <div class="swin__body">
+                  <ul class="checklist checklist--row">
+                    <li><svg class="ic"><use href="#i-check"/></svg> HTML и CSS</li>
+                    <li><svg class="ic"><use href="#i-check"/></svg> QA</li>
+                    <li><svg class="ic"><use href="#i-check"/></svg> Git и SQL</li>
+                  </ul>
+                </div>
+              </div>
+              <span class="swin__label" aria-hidden="true">Навыки <span class="btab__x">×</span></span>
+            </div>
+
+            <div class="swin swin--cream" data-for="contacts">
+              <div class="swin__inner">
+                <div class="swin__bar"><i></i><i></i><i></i>
+                  <a class="btab btab--sky" href="#contacts">Контакты <span class="btab__x" aria-hidden="true">×</span></a>
+                  <span class="btab btab--word" aria-hidden="true">me :) <span class="btab__x">×</span></span>
+                </div>
+                <div class="swin__body swin__contacts">
+                  <p class="swin__ver">Версия 2026</p>
+                  <a href="mailto:azamatasilov00@gmail.com" aria-label="Написать на почту"><svg class="ic"><use href="#i-mail"/></svg></a>
+                  <a href="https://t.me/asi_mooo" target="_blank" rel="noopener" aria-label="Telegram"><svg class="ic"><use href="#i-tg"/></svg></a>
+                  <a class="btn btn--small" href="#contacts">Связаться</a>
+                </div>
+              </div>
+              <span class="swin__label" aria-hidden="true">Контакты <span class="btab__x">×</span></span>
+            </div>
+          </div>
+        </div>
+
+        <p class="intro__scroll" aria-hidden="true">листайте вниз ↓</p>
+      </div>
+    </section>
+    <!-- ===================== ОБО МНЕ ===================== -->
+    <section class="section section--blue about-sec" id="about" data-nav="about">
+      <!-- Слова контуром на фоне. Строки двигаются при прокрутке -->
+      <div class="bgwords" aria-hidden="true">
+        <span data-dir="1">HELLO WORLD · HELLO WORLD · HELLO WORLD ·</span>
+        <span data-dir="-1">HELLO WORLD · HELLO WORLD · HELLO WORLD ·</span>
+        <span data-dir="1">HELLO WORLD · HELLO WORLD · HELLO WORLD ·</span>
+      </div>
+
+      <div class="wrap">
+        <div class="mag"><span>РЕЗЮМЕ</span><span>АЗАМАТ АСИЛОВ</span><span>20(26)</span></div>
+
+        <div class="about">
+          <!-- Фото в окошке: точечное, при наведении/нажатии «проявляется» -->
+          <div class="reveal about__photo">
+            <div class="win tilt" data-tilt>
+              <div class="win__bar"><i></i><i></i><i></i><span>photo.jpg</span></div>
+              <button class="photo" id="photo" type="button" aria-label="Фото: Азамат Асилов. Нажмите, чтобы проявить цвет">
+                <img class="photo__color" src="img/photo.jpg" alt="Азамат Асилов" width="800" height="1000">
+                <img class="photo__dots" src="img/photo-dots.webp" alt="" width="800" height="1000" aria-hidden="true">
+                <span class="photo__hint">нажми</span>
+              </button>
+            </div>
+            <p class="bubble float" style="--d:-1s">Привет! Я Азамат</p>
+
+            <svg class="px px--spark float" style="--d:-3s" aria-hidden="true"><use href="#px-spark"/></svg>
+            <svg class="px px--heart float" style="--d:-2s" aria-hidden="true"><use href="#px-heart"/></svg>
+            <svg class="px px--gem float" style="--d:-4s" aria-hidden="true"><use href="#px-gem"/></svg>
+          </div>
+
+          <div class="reveal about__text">
+            <h2 class="h-script">Обо мне</h2>
+            <p>Я выпускник IT-специальности из Астаны. Хочу работать в IT и расти в этом направлении.</p>
+            <p>Сейчас изучаю разработку AI-агентов: учусь создавать программы, которые сами решают задачи. Мне нравится разбираться в деталях, и этому меня научила работа тестировщиком.</p>
+            <a class="btn btn--pink" href="#experience">Мой опыт <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ОБРАЗОВАНИЕ (часть «Обо мне») ===================== -->
+    <section class="section edu-sec" id="education" data-nav="about">
+      <div class="wrap">
+        <div class="mag"><span>РЕЗЮМЕ</span><span>АЗАМАТ АСИЛОВ</span><span>20(26)</span></div>
+        <h2 class="h-script h-script--light reveal">Образование</h2>
+
+        <div class="cards cards--3">
+          <article class="reveal">
+            <div class="win tilt" data-tilt>
+              <div class="win__bar win__bar--xp"><b>university.exe</b><u>_</u><u>□</u><u class="x">×</u></div>
+              <div class="win__body">
+                <svg class="ic ic--xl"><use href="#i-cap"/></svg>
+                <p class="date">2020–2024</p>
+                <h3>Информационные технологии</h3>
+                <p class="muted">Казахский агротехнический исследовательский университет им. С. Сейфуллина</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reveal" style="--d:.1s">
+            <div class="win tilt" data-tilt>
+              <div class="win__bar win__bar--xp"><b>ai_agent.exe</b><u>_</u><u>□</u><u class="x">×</u></div>
+              <div class="win__body">
+                <svg class="ic ic--xl"><use href="#i-bot"/></svg>
+                <p class="date">с ноября 2026</p>
+                <h3>AI Agent Developer</h3>
+                <p class="muted">Курс в MyFreedom</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reveal" style="--d:.2s">
+            <div class="win tilt" data-tilt>
+              <div class="win__bar win__bar--xp"><b>languages.dll</b><u>_</u><u>□</u><u class="x">×</u></div>
+              <div class="win__body">
+                <svg class="ic ic--xl"><use href="#i-globe"/></svg>
+                <h3>Казахский, русский</h3>
+                <p class="muted">Английский — A1–A2, изучаю</p>
+                <!-- Сердечки «уровня»: 2 из 5 закрашены. Чтобы изменить, поменяйте класс heart--off -->
+                <div class="hearts" role="img" aria-label="Английский: начальный уровень">
+                  <svg class="heart"><use href="#px-heart"/></svg>
+                  <svg class="heart"><use href="#px-heart"/></svg>
+                  <svg class="heart heart--off"><use href="#px-heart"/></svg>
+                  <svg class="heart heart--off"><use href="#px-heart"/></svg>
+                  <svg class="heart heart--off"><use href="#px-heart"/></svg>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ЦИФРЫ ===================== -->
+    <section class="section numbers-sec" id="numbers" data-nav="about">
+      <div class="wrap">
+        <div class="mag"><span>РЕЗЮМЕ</span><span>АЗАМАТ АСИЛОВ</span><span>20(26)</span></div>
+
+        <div class="numbers">
+          <h2 class="h-big reveal">Коротко<br>в цифрах</h2>
+
+          <div class="circle reveal" style="--d:.05s"><b>4</b><span>года<br>IT-образования</span></div>
+          <div class="circle circle--lg reveal" style="--d:.15s"><b>3</b><span>языка</span></div>
+          <div class="circle reveal" style="--d:.25s"><b>2</b><span>места<br>работы и практики</span></div>
+
+          <div class="reveal numbers__card" style="--d:.3s">
+            <div class="tilt dark-card" data-tilt>
+              <p class="dark-card__title">Сейчас</p>
+              <ul class="checklist">
+                <li><svg class="ic"><use href="#i-check"/></svg> Курс AI Agent Developer</li>
+                <li><svg class="ic"><use href="#i-check"/></svg> Изучаю Python</li>
+                <li><svg class="ic"><use href="#i-check"/></svg> Учу английский</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="vox" data-vox="vx-star" style="--w:84px;--d:-2s;color:var(--green);right:5%;top:170px"></span>
+    </section>
+
+    <!-- ===================== ПЛАКАТ «DO IT BADLY» ===================== -->
+    <section class="section manifesto" id="manifesto" data-nav="about">
+      <div class="wrap">
+        <div class="mag"><span>РЕЗЮМЕ</span><span>АЗАМАТ АСИЛОВ</span><span>20(26)</span></div>
+
+        <div class="poster" lang="en">
+          <div class="poster__row">
+            <span class="big">do it</span>
+            <span class="note">(make it exist first, make it better later)</span>
+          </div>
+          <div class="poster__row poster__row--mid">
+            <span class="note note--pink" id="alignNote">(oops.. the alignment)</span>
+            <span class="big big--pink badly" id="badly" title="Нажмите, чтобы сломать и починить">badly</span>
+          </div>
+          <div class="poster__row">
+            <span class="big">but do it</span>
+            <span class="note">(then test it)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ОПЫТ ===================== -->
+    <section class="section section--blue exp-sec" id="experience" data-nav="experience">
+      <div class="wrap">
+        <div class="mag"><span>РЕЗЮМЕ</span><span>АЗАМАТ АСИЛОВ</span><span>20(26)</span></div>
+        <h2 class="h-script h-script--light reveal">Опыт</h2>
+
+        <div class="cards">
+          <!-- Карточка места работы. Копируйте блок <article>, чтобы добавить ещё одно -->
+          <article class="reveal">
+            <div class="win tilt" data-tilt>
+              <div class="win__bar win__bar--xp"><b>ministry.exe</b><u>_</u><u>□</u><u class="x">×</u></div>
+              <div class="win__body">
+                <p class="date">2025–2026</p>
+                <h3>Секретарь руководителя Департамента</h3>
+                <p class="muted">Министерство промышленности и строительства РК</p>
+                <p>Департамент финансов и корпоративного управления.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reveal" style="--d:.1s">
+            <div class="win tilt" data-tilt>
+              <div class="win__bar win__bar--xp"><b>qa_intern.exe</b><u>_</u><u>□</u><u class="x">×</u></div>
+              <div class="win__body">
+                <p class="date">2024</p>
+                <h3>Стажёр-тестировщик (QA)</h3>
+                <p class="muted">Университет им. С. Сейфуллина</p>
+                <p>Первый опыт в тестировании программного обеспечения.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!--
+          ===== ПРОЕКТЫ (добавите позже) =====
+          Чтобы показать раздел: 1) уберите эту рамку комментария,
+          2) скопируйте карточку <article> для каждого проекта.
+
+          <section class="section" id="projects" data-nav="experience">
+            <div class="wrap">
+              <div class="mag"><span>РЕЗЮМЕ</span><span>АЗАМАТ АСИЛОВ</span><span>20(26)</span></div>
+              <h2 class="h-script reveal">Проекты</h2>
+              <div class="cards">
+                <article class="reveal">
+                  <div class="win tilt" data-tilt>
+                    <div class="win__bar win__bar--xp"><b>project_1.exe</b><u>_</u><u>□</u><u class="x">×</u></div>
+                    <div class="win__body">
+                      <h3>Название проекта</h3>
+                      <p>Коротко: что это и что вы сделали.</p>
+                      <a class="btn" href="ССЫЛКА" target="_blank" rel="noopener">Смотреть</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        -->
+      </div>
+      <span class="vox" data-vox="vx-coin" style="--w:70px;--d:-3s;color:var(--paper);right:6%;top:180px"></span>
+    </section>
+
+    <!-- ===================== БЕГУЩАЯ СТРОКА: ЛОГ ТЕСТОВ ===================== -->
+    <div class="ticker" aria-label="Лог тестов: HTML, CSS, Git, SQL, QA пройдены; Python и AI-агенты в процессе">
+      <div class="ticker__track" aria-hidden="true">
+        <span>✓ html — passed&nbsp;&nbsp;&nbsp;✓ css — passed&nbsp;&nbsp;&nbsp;✓ git — passed&nbsp;&nbsp;&nbsp;✓ sql — passed&nbsp;&nbsp;&nbsp;✓ qa — passed&nbsp;&nbsp;&nbsp;⟳ python — in progress&nbsp;&nbsp;&nbsp;⟳ ai agents — loading…&nbsp;&nbsp;&nbsp;0 bugs found :)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>✓ html — passed&nbsp;&nbsp;&nbsp;✓ css — passed&nbsp;&nbsp;&nbsp;✓ git — passed&nbsp;&nbsp;&nbsp;✓ sql — passed&nbsp;&nbsp;&nbsp;✓ qa — passed&nbsp;&nbsp;&nbsp;⟳ python — in progress&nbsp;&nbsp;&nbsp;⟳ ai agents — loading…&nbsp;&nbsp;&nbsp;0 bugs found :)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ===================== НАВЫКИ: окно Paint ===================== -->
+    <section class="section skills-sec" id="skills" data-nav="skills">
+      <div class="bgwords bgwords--pink" aria-hidden="true">
+        <span data-dir="-1">DEBUG · DEBUG · DEBUG · DEBUG · DEBUG ·</span>
+        <span data-dir="1">DEBUG · DEBUG · DEBUG · DEBUG · DEBUG ·</span>
+        <span data-dir="-1">DEBUG · DEBUG · DEBUG · DEBUG · DEBUG ·</span>
+      </div>
+
+      <div class="wrap">
+        <div class="mag"><span>РЕЗЮМЕ</span><span>АЗАМАТ АСИЛОВ</span><span>20(26)</span></div>
+        <h2 class="h-big reveal">Навыки</h2>
+
+        <div class="win paint reveal">
+          <div class="win__bar win__bar--xp"><b>skills.paint</b><u>_</u><u>□</u><u class="x">×</u></div>
+          <div class="paint__body">
+            <!-- Панель инструментов: каждый инструмент — навык.
+                 data-text — подпись, data-icon — id иконки из списка вверху страницы -->
+            <div class="paint__tools" aria-label="Навыки">
+              <button class="tool is-on" type="button" data-name="HTML"   data-text="вёрстка страниц"     data-icon="i-code"><svg class="ic"><use href="#i-code"/></svg><span>HTML</span></button>
+              <button class="tool"       type="button" data-name="CSS"    data-text="стили и анимации"    data-icon="i-css"><svg class="ic"><use href="#i-css"/></svg><span>CSS</span></button>
+              <button class="tool"       type="button" data-name="Git"    data-text="контроль версий кода" data-icon="i-git"><svg class="ic"><use href="#i-git"/></svg><span>Git</span></button>
+              <button class="tool"       type="button" data-name="SQL"    data-text="базовый уровень"     data-icon="i-db"><svg class="ic"><use href="#i-db"/></svg><span>SQL</span></button>
+              <button class="tool"       type="button" data-name="QA"     data-text="тестирование"        data-icon="i-bug"><svg class="ic"><use href="#i-bug"/></svg><span>QA</span></button>
+              <button class="tool tool--learn" type="button" data-name="Python" data-text="изучаю" data-icon="i-py"><svg class="ic"><use href="#i-py"/></svg><span>Python</span></button>
+            </div>
+
+            <div class="paint__canvas" id="canvas" aria-live="polite">
+              <div class="paint__icon"><svg class="ic"><use id="paintIcon" href="#i-code"/></svg></div>
+              <p class="paint__name" id="paintName">HTML</p>
+              <p class="paint__text" id="paintText">вёрстка страниц</p>
+              <p class="paint__hint">наведите или нажмите на инструмент слева</p>
+            </div>
+          </div>
+          <div class="paint__scroll" aria-hidden="true"><i>‹</i><span></span><i>›</i></div>
+        </div>
+      </div>
+      <span class="vox" data-vox="vx-bug" style="--w:80px;--ar:11/8;--d:-1s;color:var(--pink);right:6%;top:200px"></span>
+    </section>
+
+    <!-- ===================== КОНТАКТЫ (финал: GAME OVER) ===================== -->
+    <section class="section contacts-sec" id="contacts" data-nav="contacts">
+      <div class="wrap">
+        <div class="mag"><span>РЕЗЮМЕ</span><span>АЗАМАТ АСИЛОВ</span><span>20(26)</span></div>
+
+        <h2 class="h-giant reveal">Давайте работать вместе!</h2>
+
+        <div class="finale">
+          <!-- Фото в стиле «Game Over» -->
+          <div class="reveal gameover">
+            <div class="gameover__frame tilt" data-tilt>
+              <img src="img/gameover.jpg" alt="Азамат отдыхает на траве с книгой на лице" width="900" height="1200" loading="lazy">
+              <p class="gameover__title">GAME<br>OVER</p>
+              <div class="hearts hearts--over" aria-hidden="true">
+                <svg class="heart"><use href="#px-heart"/></svg>
+                <svg class="heart heart--off"><use href="#px-heart"/></svg>
+                <svg class="heart heart--off"><use href="#px-heart"/></svg>
+                <svg class="heart heart--off"><use href="#px-heart"/></svg>
+                <svg class="heart heart--off"><use href="#px-heart"/></svg>
+              </div>
+              <svg class="px px--spark go-s1 float" style="--d:-1s" aria-hidden="true"><use href="#px-spark"/></svg>
+              <svg class="px px--gem go-s2 float" style="--d:-3s" aria-hidden="true"><use href="#px-gem"/></svg>
+              <svg class="px px--heart go-s3 float" style="--d:-2s" aria-hidden="true"><use href="#px-heart"/></svg>
+              <a class="px-btn" href="https://t.me/asi_mooo" target="_blank" rel="noopener">NEW GAME</a>
+            </div>
+          </div>
+
+          <div class="finale__side">
+            <span class="vox" data-vox="vx-yes" style="--w:110px;--ar:20/11;--d:-2s;color:var(--paper);right:-10px;top:-70px"></span>
+
+            <!-- Шуточное окно-предупреждение -->
+            <div class="reveal">
+              <div class="win win--dialog tilt" data-tilt style="--rot:-2deg">
+                <div class="win__bar win__bar--xp"><b>System Warning</b><u class="x">×</u></div>
+                <div class="win__body dialog">
+                  <p>Вы уверены, что хотите упустить этого кандидата?</p>
+                  <div class="dialog__btns">
+                    <a class="btn btn--small" href="https://t.me/asi_mooo" target="_blank" rel="noopener">Нет, написать</a>
+                    <button class="btn btn--small btn--grey" id="noBtn" type="button">Да</button>
+                  </div>
+                  <svg class="px px--cursor dialog__cursor" aria-hidden="true"><use href="#px-cursor"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal contacts__card" style="--d:.1s">
+              <div class="tilt dark-card dark-card--big" data-tilt>
+                <p class="dark-card__title">Контакты</p>
+                <ul class="contact-list">
+                  <li><svg class="ic"><use href="#i-mail"/></svg> <a href="mailto:azamatasilov00@gmail.com">azamatasilov00@gmail.com</a></li>
+                  <li><svg class="ic"><use href="#i-tg"/></svg> <a href="https://t.me/asi_mooo" target="_blank" rel="noopener">@asi_mooo</a></li>
+                  <li><svg class="ic"><use href="#i-pin"/></svg> Астана</li>
+                </ul>
+                <div class="contact-btns">
+                  <a class="btn btn--green" href="https://t.me/asi_mooo" target="_blank" rel="noopener">Написать в Telegram</a>
+                  <a class="btn" href="mailto:azamatasilov00@gmail.com">Написать на почту</a>
+                </div>
+              </div>
+            </div>
+
+            <span class="vox" data-vox="vx-arrow" style="--w:70px;--ar:11/9;--d:-4s;color:var(--pink);left:-60px;bottom:22%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Азамат Асилов · Астана</p>
+    <a class="btn btn--small" href="#top">Наверх ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
